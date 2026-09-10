@@ -31,7 +31,7 @@ jobs:
         with:
           config: auto
       - name: Run SCA
-        uses: google/osv-scanner-action@v2
+        uses: google/osv-scanner-action@v2.4.0
         with:
           scan-args: |-
             -r

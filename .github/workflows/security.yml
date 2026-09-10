@@ -30,3 +30,9 @@ jobs:
         uses: semgrep/semgrep-action@v1
         with:
           config: auto
+      - name: Run SCA
+        uses: google/osv-scanner-action@v2
+        with:
+          scan-args: |-
+            -r
+            .
